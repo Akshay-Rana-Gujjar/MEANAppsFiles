@@ -24,7 +24,11 @@ app.configure(function() {
 	app.use(express.static(__dirname + '/public'));
 });
 
-mongoose.connect('mongodb://localhost/multivision');
+if(env === 'development') {
+	mongoose.connect('mongodb://localhost/multivision');
+} else {
+	mongoose.connect(process.env.MONGO_LAB);
+}
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error...'));
 db.once('open', function callback() {
