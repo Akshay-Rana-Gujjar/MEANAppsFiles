@@ -4,3 +4,4 @@ public/vendor/
 .idea/
 server/includes/*.html
 server/views/*.html
+server/views/partials/*.html
