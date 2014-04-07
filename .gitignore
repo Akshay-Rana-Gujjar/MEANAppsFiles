@@ -6,3 +6,5 @@ server/includes/*.html
 server/views/*.html
 server/views/partials/*.html
 public/css/site.css
+public/app/account/*.html
+public/app/main/*.html
