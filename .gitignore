@@ -5,3 +5,4 @@ public/vendor/
 server/includes/*.html
 server/views/*.html
 server/views/partials/*.html
+public/css/site.css
