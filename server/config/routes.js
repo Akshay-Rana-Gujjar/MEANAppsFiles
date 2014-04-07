@@ -7,7 +7,7 @@ module.exports = function(app) {
 	});
 
 	app.post('/login', function(req,res,next){
-		var auth = passport.authenicate('local',function(err,user){
+		var auth = passport.authenticate('local',function(err,user){
 			if(err) {return next(err);}
 			if(!user) {res.send({success:false});}
 			// logIn() is a function that passport adds to the request object
